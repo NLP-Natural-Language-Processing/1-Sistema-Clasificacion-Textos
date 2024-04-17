@@ -1,6 +1,7 @@
 # 1-Sistema-Clasificación-Textos
 1. [Instalación librería NLTK](#schema1)
 2. [Caso Práctico Clasificación Textos – Tokenizar](#schema2)
+3. [Ánalisis de Sentimientos](#schema3)
 
 
 <hr>
@@ -116,3 +117,37 @@ import spacy
 nlp = spacy.blank('es')
 ```
 `spacy` español
+
+
+### **6. Filtro Spam**
+
+![Spam](./img/spam.png)
+
+<hr>
+
+<a name="schema3"></a>
+
+## 3. Ánalisis de Sentimientos
+
+### **1. ¿En qué consiste el Análisis de Sentimientos?**
+- Comprender y analizar la respuesta de las personas descubriendo opiniones, emociones y sentimientos sobre un producto, servicio o entidad (mayoritariamente de redes sociales con alto volumen de respuestas).
+- Se basa en el Procesamiento del Lenguaje Natural y la estadística asignando valores al texto (positivo, negativo o neutral). Con ello, identificar el sentimiento global (contento, triste,enfadado,…)
+
+- Alta aplicación para:
+
+  - Identificar la respuesta a mensajes de negocio de las empresas
+  - Reajuste de la estrategia de negocio
+  - Diseñar una mejor experiencia de cliente
+  - Mejorar el producto o servicio
+  - Análisis de la percepción de marca
+  - Predicción de movimientos en bolsa
+
+### 2. Caso Práctico
+
+![Twitter](./img/twitter.png)
+Necesitamos:
+
+```python
+pip install tweepy
+pip install textblob
+```
